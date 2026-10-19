@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5fc;
+    color: #183153;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    background: #e2edff;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #1553a4;
+    margin: 0 0 10px;
+}
+
+.header p {
+    color: #526783;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.form-tambah {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd9ed;
+    border-radius: 8px;
+}
+
+button {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-tambah {
+    background: #2878ed;
+    color: white;
+}
+
+.btn-hapus {
+    background: #ff5b63;
+    color: white;
+}
+
+.btn-selesai {
+    background: #1ca66a;
+    color: white;
+}
+
+.tabel-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th, td {
+    border-bottom: 1px solid #e0e9f6;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+th {
+    background: #dce9fc;
+    color: #194d91;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f8fe;
+}
+
+.nama-barang {
+    text-align: left;
+}
+
+.terbeli {
+    text-decoration: line-through;
+    color: #8492a6;
+}
+
+.pilihan-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.status {
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-selesai {
+    background: #d9f7e6;
+    color: #14834d;
+}
+
+.status-belum {
+    background: #ffe5e7;
+    color: #d93643;
+}
+
+.ringkasan {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e5efff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .form-tambah {
+        flex-direction: column;
+    }
+
+    .ringkasan {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
